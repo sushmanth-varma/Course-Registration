@@ -1,0 +1,413 @@
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Registration</title>
+  </head>
+  <body>
+    <h1>Corse Registration Form</h1>
+    <form action="">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr></tr>
+          <tr>
+            <td><label for="User_name">First Name</label></td>
+            <td>
+              <input name="User_name" type="text" placeholder="Name" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="User_Surname">Surname</label></td>
+            <td>
+              <input
+                name="User_Surname"
+                type="text"
+                placeholder="Surname"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="User_Age">Age</label></td>
+            <td>
+              <input
+                type="number"
+                min="18"
+                max="40"
+                name="User_Age"
+                id="User_Age"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="User_Number">Mobile Number</label></td>
+            <td>
+              <input
+                name="User_Number"
+                type="tel"
+                placeholder="please enter the number"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="User_Email">Email</label></td>
+            <td>
+              <input
+                name="User_Email"
+                type="email"
+                placeholder="enter the email"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="User_Password">Password</label></td>
+            <td><input name="User_Password" type="password" /></td>
+          </tr>
+          <tr>
+            <td><label for="User_Password">Confirm Password</label></td>
+            <td><input name="User_Password" type="password" /></td>
+          </tr>
+          <tr>
+            <td><label for="User_Date">DOB</label></td>
+            <td><input name="User_Date" type="date" /></td>
+          </tr>
+          <tr>
+            <td><label for="Gender">Gender</label></td>
+            <td>
+              <input type="radio" name="Gender" value="Male" /><label for=""
+                >Male</label
+              >
+              <input type="radio" name="Gender" value="Female" /><label for=""
+                >Female</label
+              >
+              <input type="radio" name="Gender" value="Other" /><label for=""
+                >Other</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Country">Selct Country</label></td>
+            <td>
+              <select name="Country" id="Country">
+                <option value="" disabled> -- Select Country--</option>
+                <option value="Ind" selected>India</option>
+                <option value="Rus">Russia</option>
+                <option value="USA">USA</option>
+                <option value="Austa">Australia</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Upload">Upload picture</label></td>
+            <td><input name="Upload" type="file" /></td>
+          </tr>
+          <tr>
+                  </fieldset>
+            <td><label for="">Select Course</label></td>
+            <td>
+              <select name="" id="">
+                <option value="">C1</option>
+                <option value="">C2</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Delivary Mode</td>
+            <td>
+              <input type="checkbox" name="Delivary Mode" value="Online" /><label for="Mode">Online</label>
+              <input type="checkbox"  name="Delivary Mode" value="Offline"/><label for="Mode">Offline</label>
+            </td>
+          </tr>
+          <tr>
+            <td>About Your Self</td>
+            <td><textarea rows="5" name="" id=""></textarea></td>
+          </tr>
+          <tr>
+            <td><label for="Mark_range">Marks Range</label></td>
+            <td>
+              <input
+                min="20"
+                max="100"
+                type="Range"
+                name="Mark_range"
+                id="Mark_range"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><button>Submit Form</button></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html> -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Registration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Corse Registration Form</h1>
+  <form action="">
+    <fieldset>
+      <legend>Personal Details</legend>
+      <table>
+        <tr></tr>
+        <tr>
+          <td><label for="User_name">First Name</label></td>
+          <td>
+            <input name="User_name" type="text" placeholder="Name" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="User_Surname">Surname</label></td>
+          <td>
+            <input name="User_Surname" type="text" placeholder="Surname" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="User_Age">Age</label></td>
+          <td>
+            <input type="number" min="18" max="40" name="User_Age" id="User_Age" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="User_Number">Mobile Number</label></td>
+          <td>
+            <input name="User_Number" type="tel" placeholder="please enter the number" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="User_Email">Email</label></td>
+          <td>
+            <input name="User_Email" type="email" placeholder="enter the email" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="User_Password">Password</label></td>
+          <td><input name="User_Password" type="password" /></td>
+        </tr>
+        <tr>
+          <td><label for="User_Password">Confirm Password</label></td>
+          <td><input name="User_Password" type="password" /></td>
+        </tr>
+        <tr>
+          <td><label for="User_Date">DOB</label></td>
+          <td><input name="User_Date" type="date" /></td>
+        </tr>
+        <tr>
+          <td><label for="Gender">Gender</label></td>
+          <td>
+            <input type="radio" name="Gender" value="Male" /><label for="">Male</label>
+            <input type="radio" name="Gender" value="Female" /><label for="">Female</label>
+            <input type="radio" name="Gender" value="Other" /><label for="">Other</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Country">Selct Country</label></td>
+          <td>
+            <select name="Country" id="Country">
+              <option value="" disabled> -- Select Country--</option>
+              <option value="Ind" selected>India</option>
+              <option value="Rus">Russia</option>
+              <option value="USA">USA</option>
+              <option value="Austa">Australia</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Upload">Upload picture</label></td>
+          <td><input name="Upload" type="file" /></td>
+        </tr>
+        <tr>
+    </fieldset>
+    <td><label for="">Select Course</label></td>
+    <td>
+      <select name="" id="">
+        <option value="">C1</option>
+        <option value="">C2</option>
+      </select>
+    </td>
+    </tr>
+    <tr>
+      <td>Delivary Mode</td>
+      <td>
+        <input type="checkbox" name="Delivary Mode" value="Online" /><label for="Mode">Online</label>
+        <input type="checkbox" name="Delivary Mode" value="Offline" /><label for="Mode">Offline</label>
+      </td>
+    </tr>
+    <tr>
+      <td>About Your Self</td>
+      <td><textarea rows="5" name="" id=""></textarea></td>
+    </tr>
+    <tr>
+      <td><label for="Mark_range">Marks Range</label></td>
+      <td>
+        <input min="20" max="100" type="Range" name="Mark_range" id="Mark_range" />
+      </td>
+    </tr>
+    <tr>
+      <td><button>Submit Form</button></td>
+    </tr>
+    </table>
+    </fieldset>
+  </form>
+
+  <!-- ══════════════════════════════════════════════════════
+         EXTRA FORM — HTML elements not used in the form above
+         ══════════════════════════════════════════════════════ -->
+  <h1>Additional HTML Form Elements</h1>
+  <form action="">
+    <fieldset>
+      <legend>Course Preferences &amp; Extra Details</legend>
+      <table>
+        <!-- Search input -->
+        <tr>
+          <td><label for="Course_Search">Search Course</label></td>
+          <td><input type="search" name="Course_Search" id="Course_Search" placeholder="Search for a course..." /></td>
+        </tr>
+
+        <!-- URL input -->
+        <tr>
+          <td><label for="Portfolio_URL">Portfolio URL</label></td>
+          <td><input type="url" name="Portfolio_URL" id="Portfolio_URL" placeholder="https://your-portfolio.com" /></td>
+        </tr>
+
+        <!-- Color input -->
+        <tr>
+          <td><label for="Theme_Color">Preferred Theme Color</label></td>
+          <td><input type="color" name="Theme_Color" id="Theme_Color" value="#2a222b" /></td>
+        </tr>
+
+        <!-- Date & Time inputs -->
+        <tr>
+          <td><label for="Start_Date">Preferred Start Date</label></td>
+          <td><input type="date" name="Start_Date" id="Start_Date" /></td>
+        </tr>
+        <tr>
+          <td><label for="Class_Time">Preferred Class Time</label></td>
+          <td><input type="time" name="Class_Time" id="Class_Time" /></td>
+        </tr>
+        <tr>
+          <td><label for="Session_Week">Preferred Week</label></td>
+          <td><input type="week" name="Session_Week" id="Session_Week" /></td>
+        </tr>
+        <tr>
+          <td><label for="Session_Month">Preferred Month</label></td>
+          <td><input type="month" name="Session_Month" id="Session_Month" /></td>
+        </tr>
+        <tr>
+          <td><label for="Enquiry_DateTime">Enquiry Date &amp; Time</label></td>
+          <td><input type="datetime-local" name="Enquiry_DateTime" id="Enquiry_DateTime" /></td>
+        </tr>
+
+        <!-- Hidden input (invisible data carried with the form) -->
+        <tr>
+          <td><label>Form Version</label></td>
+          <td><input type="hidden" name="Form_Version" value="v2.0" />v2.0 (hidden field)</td>
+        </tr>
+
+        <!-- Datalist (autocomplete suggestions) -->
+        <tr>
+          <td><label for="Pref_City">Preferred City (with suggestions)</label></td>
+          <td>
+            <input list="city_list" name="Pref_City" id="Pref_City" placeholder="Start typing a city..." />
+            <datalist id="city_list">
+              <option value="Mumbai"></option>
+              <option value="Bengaluru"></option>
+              <option value="Hyderabad"></option>
+              <option value="Chennai"></option>
+              <option value="Pune"></option>
+            </datalist>
+          </td>
+        </tr>
+
+        <!-- Select with optgroup -->
+        <tr>
+          <td><label for="Course_Level">Course Level (grouped)</label></td>
+          <td>
+            <select name="Course_Level" id="Course_Level">
+              <optgroup label="Beginner">
+                <option value="B1">Intro to HTML</option>
+                <option value="B2">Intro to CSS</option>
+              </optgroup>
+              <optgroup label="Advanced">
+                <option value="A1">Advanced JavaScript</option>
+                <option value="A2">Backend with Node</option>
+              </optgroup>
+            </select>
+          </td>
+        </tr>
+
+        <!-- Multi-select -->
+        <tr>
+          <td><label for="Multi_Courses">Interested Courses (hold Ctrl/Cmd)</label></td>
+          <td>
+            <select name="Multi_Courses" id="Multi_Courses" multiple size="4">
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="js">JavaScript</option>
+              <option value="react">React</option>
+              <option value="node">Node.js</option>
+            </select>
+          </td>
+        </tr>
+
+        <!-- Output + Range combo -->
+        <tr>
+          <td><label for="Skill_Level">Skill Level</label></td>
+          <td>
+            <input type="range" name="Skill_Level" id="Skill_Level" min="0" max="10" value="5"
+              oninput="skill_output.value = this.value" />
+            <output name="skill_output" id="skill_output" for="Skill_Level">5</output>
+          </td>
+        </tr>
+
+        <!-- Meter (progress/score display) -->
+        <tr>
+          <td><label for="Profile_Score">Profile Completeness</label></td>
+          <td>
+            <meter id="Profile_Score" name="Profile_Score" min="0" max="100" low="30" high="70" optimum="100"
+              value="65">65 out of 100</meter>
+          </td>
+        </tr>
+
+        <!-- Progress bar -->
+        <tr>
+          <td><label for="Form_Progress">Form Completion</label></td>
+          <td>
+            <progress id="Form_Progress" name="Form_Progress" max="100" value="45">45%</progress>
+          </td>
+        </tr>
+
+        <!-- Reset & Submit buttons -->
+        <tr>
+          <td>
+            <button type="submit">Submit Form</button>
+            <button type="reset">Reset Form</button>
+          </td>
+          <td>
+            <input type="submit" value="Submit (input)" />
+            <input type="reset" value="Reset (input)" />
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+  </form>
+
+</body>
+
+</html>
